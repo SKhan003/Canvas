@@ -206,6 +206,7 @@ body::-webkit-scrollbar{
     background-color: rgb(255, 255, 255);
     pointer-events: none;
     border-radius: 50%;
+    mix-blend-mode: difference;
     /* background: linear-gradient(135deg, rgba(94, 85, 85, 0.1),rgba(95, 89, 89, 0));
     backdrop-filter: blur(2px);
     border: 1.8px solid rgba(255, 253, 253, 0.18);
@@ -986,6 +987,9 @@ section{
     width: 100%;
     height: 100%;
     /* background-color:violet; */
+}
+.lowercasep{
+    text-transform:lowercase !important;
 }
 
 
@@ -2108,203 +2112,6 @@ section{
 
 
 
-/* ///////////////*************FOOTER CSS ***************************** ////////////////////// */
-
-  
-
-
-
-
-.footer {
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-  }
-  .footer-inside2 {
-    height: 40%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* border: 2px solid red; */
-  }
-  
-  .footer-inside .footerup1 {
-    height: 100%;
-    width: 38%;
-    /* border: 2px solid red; */
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  .footer-inside .footerup1 h1 {
-    color: #eeeeee;
-    font-size: 3.5vh;
-  }
-  .footer-inside .footerup1 button {
-    background-color: transparent;
-    color: #eeeeee;
-    border-radius: 30px;
-    font-size: 2.2vh;
-    padding: 10px 15px;
-    border: 1px solid #eeeeee;
-    height: 50px;
-    width: 130px;
-  }
-  
-  .footerup2 {
-    display: flex;
-    /* flex-direction: column; */
-    height: 100%;
-    width: 50vh;
-    justify-content: space-around;
-  }
-  .inside-up {
-      padding: 35px 10px; 
-    height: 100%;
-    color: #eeeeee;
-  }
-  .inside-up h5{
-      width: fit-content;
-      font-size: 2.8vh;
-      /* border: 2px solid lightblue; */
-    cursor: pointer;
-  }
-  .footer-inside4{
-      display: flex;
-      justify-content: space-between;
-      /* border: 2px solid rebeccapurple; */
-      height: 10%;
-  }
-  .inside-up h3{
-      width: fit-content;
-      font-size: 2.8vh;
-  }
-  .footerup1 h3{
-      width: fit-content;
-      font-size: 2.8vh;
-      color: #eeeeee;
-  }
-  .footer-inside6{
-      /* border: 2px solid red; */
-      height: 50%;
-      display: flex;
-      align-items: start;
-      justify-content: center;
-      overflow: hidden;
-  }
-  .footer-inside6 h1{
-      overflow: hidden;
-      color: #eeeeee;
-      font-size: 49.5vh;
-      font-family: footer;
-      letter-spacing: 10px;
-  }
-  .footer-inside6 h1 span{
-      display: inline-block;
-      /* position: relative;  */
-  }
-  .page1{
-      height: 100vh;
-      width: 100vw;
-      background-color: lightblue;
-  }
-  .page2{
-      height: 100vh;
-      width: 100vw;
-      background-color: lightcoral;
-  }
-  .underline h5{
-    /* border: 2px solid red; */
-    position: relative;
-    line-height: 1.4;
-  }
-  .underline h5:hover{
-      color: #eeeeee;
-    }
-    .underline h5::before{
-      content: '';
-      position: absolute;
-      bottom: 0px;
-      /* left: 0;  */
-      width: 0%;
-      height: 1.2px;
-      background-color: #eeeeee;
-      transition: all .5s;
-    }
-    .underline h5:hover::before{
-      width: 100%;
-      right: 0;
-    }
-  .underline2 h5{
-    /* border: 2px solid red; */
-    position: relative;
-    line-height: 1.4;
-  }
-  .underline2 h5:hover{
-      color: #eeeeee;
-    }
-    .underline2 h5::before{
-      content: '';
-      position: absolute;
-      bottom: 0px;
-      /* left: 0;  */
-      width: 0%;
-      height: 1.2px;
-      background-color: #eeeeee;
-      transition: all .5s;
-    }
-    .underline2 h5:hover::before{
-      width: 100%;
-      right: 0;
-    }
-  .underline3 h3{
-    /* border: 2px solid red; */
-    position: relative;
-    line-height: 1.4;
-    cursor: pointer;
-  }
-  .underline3 h3:hover{
-      color: #eeeeee;
-    }
-    .underline3 h3::before{
-      content: '';
-      position: absolute;
-      bottom: 0px;
-      /* left: 0;  */
-      width: 0%;
-      height: 1.2px;
-      background-color: #eeeeee;
-      transition: all .5s;
-    }
-    .underline3 h3:hover::before{
-      width: 100%;
-      right: 0;
-    }
-  .underline4 h3{
-    /* border: 2px solid red; */
-    position: relative;
-    line-height: 1.4;
-    cursor: pointer;
-  }
-  .underline4 h3:hover{
-      color: #eeeeee;
-    }
-    .underline4 h3::before{
-      content: '';
-      position: absolute;
-      bottom: 0px;
-      /* left: 0;  */
-      width: 0%;
-      height: 1.2px;
-      background-color: #eeeeee;
-      transition: all .5s;
-    }
-    .underline4 h3:hover::before{
-      width: 100%;
-      right: 0;
-    }
 
 
 
@@ -2457,18 +2264,99 @@ section{
     color: white;
     font-size: 49.5vh;
     font-family: footer;
-    letter-spacing: 10px;
+    letter-spacing: 7px;
 }
 .footer-inside6 h1 span{
     display: inline-block;
 }
-.page1{
-    height: 100vh;
-    width: 100vw;
-    background-color: lightblue;
-}
-.page2{
-    height: 100vh;
-    width: 100vw;
-    background-color: lightcoral;
-}
+.underline h5{
+    /* border: 2px solid red; */
+    position: relative;
+    line-height: 1.4;
+  }
+  .underline h5:hover{
+      color: #eeeeee;
+      cursor: pointer;
+    }
+    .underline h5::before{
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      /* left: 0;  */
+      width: 0%;
+      height: 1.2px;
+      background-color: #eeeeee;
+      transition: all .5s;
+    }
+    .underline h5:hover::before{
+      width: 100%;
+      right: 0;
+    }
+  .underline2 h5{
+    /* border: 2px solid red; */
+    position: relative;
+    line-height: 1.4;
+  }
+  .underline2 h5:hover{
+      color: #eeeeee;
+    }
+    .underline2 h5::before{
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      /* left: 0;  */
+      width: 0%;
+      height: 1.2px;
+      background-color: #eeeeee;
+      transition: all .5s;
+    }
+    .underline2 h5:hover::before{
+      width: 100%;
+      right: 0;
+    }
+  .underline3 h3{
+    /* border: 2px solid red; */
+    position: relative;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+  .underline3 h3:hover{
+      color: #eeeeee;
+    }
+    .underline3 h3::before{
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      /* left: 0;  */
+      width: 0%;
+      height: 1.2px;
+      background-color: #eeeeee;
+      transition: all .5s;
+    }
+    .underline3 h3:hover::before{
+      width: 100%;
+      right: 0;
+    }
+  .underline4 h3{
+    /* border: 2px solid red; */
+    position: relative;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+  .underline4 h3:hover{
+      color: #eeeeee;
+    }
+    .underline4 h3::before{
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      /* left: 0;  */
+      width: 0%;
+      height: 1.2px;
+      background-color: #eeeeee;
+      transition: all .5s;
+    }
+    .underline4 h3:hover::before{
+      width: 100%;
+      right: 0;
+    }

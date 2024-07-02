@@ -29,7 +29,7 @@ function textbreak() {
       {
         x: "-100",
         duration: 0.8,
-        delay: 0.5,
+        delay: 3.8,
         opacity:0,
         stagger: 0.05,
         scrub: 2  ,
@@ -42,7 +42,7 @@ function textbreak() {
       {
         x: "-100",
         duration: 0.8,
-        delay: 0.5,
+        delay: 3.8,
         opacity:0,
         stagger: 0.05,
         scrub: 1,
@@ -52,7 +52,7 @@ function textbreak() {
     tl.from("#page1info h6",{
       x: "-100",
       duration: 1,
-      delay: 0.5,
+      delay: 3.8,
       opacity:0,
       stagger: 0.05,
       scrub: 1,
@@ -61,7 +61,7 @@ function textbreak() {
     tl.from("#page1button",{
       x: "-100",
       duration: 1,
-      delay: 0.5,
+      delay: 3.8,
       opacity:0,
       stagger: 0.05,
       scrub: 1,
@@ -69,7 +69,7 @@ function textbreak() {
     tl.from("#carspecs .cars",{
       x: "-300",
       duration: 1,
-      delay: 0.5,
+      delay: 3.8,
       opacity:0,
       stagger: 0.05,
       scrub: 1,
